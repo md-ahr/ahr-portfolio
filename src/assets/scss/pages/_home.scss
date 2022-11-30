@@ -1,0 +1,41 @@
+.top-content {
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-gray;
+  font-family: $ubuntu-light;
+  position: relative;
+  word-spacing: 0.5rem;
+
+  span {
+    display: block;
+  }
+
+  .line {
+    position: absolute;
+    width: 1200px;
+    height: 0px;
+    left: -352px;
+    top: 0;
+    border: 1px solid #646262;
+    transform: rotate(90deg);
+  }
+
+  .line2 {
+    position: absolute;
+    width: 850px;
+    height: 0px;
+    left: -68px;
+    bottom: 70px;
+    border: 1px solid #646262;
+    transform: rotate(-180deg);
+    z-index: 9;
+  }
+
+  .line3 {
+    @extend .line2;
+    width: 105px;
+    left: 30px;
+    border-color: #eaeaea;
+    z-index: 10;
+  }
+}

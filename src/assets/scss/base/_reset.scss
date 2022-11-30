@@ -1,9 +1,110 @@
+// base styles
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-sizing: normal;
+}
+
 body {
-  font-size: 3rem;
-  color: $dark-color;
-  background-color: $white-color;
-  font-family: $seaweedScript-regular;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 100%;
+  color: $color-black;
+  font-family: $ubuntu-regular;
   background-image: url('../images/bg-image.png');
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+
+  .custom-container {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+}
+
+[hidden] {
+  display: none;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+picture {
+  display: contents;
+}
+
+source {
+  display: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  height: auto;
+}
+
+audio {
+  width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
 }

@@ -1,9 +1,13 @@
 // theme colors
-
-// #524D4D, #000, #2A0044, border -> (#646262, #C1C1C1, rgba(255, 255, 255, 0.3)), btn -> #3C2A47, #565656, form border -> #494949
-
-$white-color: #fff;
-$dark-color: #333;
+$color-white: #fff;
+$color-black: #000;
+$color-btn: #3c2a47;
+$color-primary: #2a0044;
+$color-gray: #524d4d;
+$color-border: #646262;
+$color-border-light: #c1c1c1;
+$color-border-dark: rgba(255, 255, 255, 0.3);
+$color-form-border: #494949;
 
 // fonts -> ubuntu, lora & seaweedScript regular
 $ubuntu-bold: 'ubuntu-bold';
