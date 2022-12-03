@@ -10,6 +10,7 @@ html {
   line-sizing: normal;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -24,9 +25,13 @@ body {
   text-rendering: optimizeLegibility;
 
   .custom-container {
-    max-width: 92%;
+    max-width: 90%;
     margin: 0 auto;
   }
+}
+
+p {
+  margin-bottom: 0;
 }
 
 [hidden] {

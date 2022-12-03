@@ -4,6 +4,8 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'helpers/media-queries';
+
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
@@ -12,5 +14,6 @@
 
 @import 'components/buttons';
 @import 'components/carousel';
+@import 'components/down-arrow-icon';
 
 @import 'pages/home';

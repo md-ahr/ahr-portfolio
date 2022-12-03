@@ -1,0 +1,96 @@
+.top-content {
+  font-size: 3rem;
+  line-height: 72px;
+  color: $color-gray;
+  font-family: $ubuntu-light;
+  position: relative;
+  word-spacing: 0.5rem;
+
+  .horizontal-line {
+    position: absolute;
+    width: 1200px;
+    left: -352px;
+    top: 0;
+    border: 1px solid $color-border;
+    transform: rotate(90deg);
+  }
+
+  .vertical-line-left {
+    position: absolute;
+    width: 115px;
+    left: -85px;
+    bottom: 70px;
+    border: 1px solid $color-border;
+    transform: rotate(-180deg);
+  }
+
+  .vertical-line-right {
+    @extend .vertical-line-left;
+    width: 400px;
+    left: 135px;
+
+    @include respondScreen(laptop) {
+      width: 500px;
+    }
+
+    @include respondScreen(desktop) {
+      width: 800px;
+    }
+  }
+}
+
+.shape {
+  margin-top: 60px;
+  position: relative;
+
+  &-circle {
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    top: -160px;
+    right: 0;
+    background: linear-gradient(
+      109.55deg,
+      #c4c4c4 18.84%,
+      rgba(196, 196, 196, 0) 100.79%
+    );
+    border-radius: 100vw;
+  }
+
+  &-box {
+    width: 95%;
+    height: 304px;
+    margin: auto;
+    background: linear-gradient(
+      116.84deg,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(196, 196, 196, 0.1) calc(100.76% + 1px)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+
+    &__intro {
+      font-size: 2.5rem;
+      line-height: 48px;
+      margin: 0 0 -20px 36px;
+      font-family: $seaweedScript-regular;
+    }
+
+    &__name {
+      color: $color-primary;
+      font-size: 6rem;
+      line-height: 120px;
+      font-family: $lora-medium;
+    }
+
+    &__designation {
+      font-size: 3rem;
+      line-height: 56px;
+      font-family: $ubuntu-light;
+    }
+  }
+}

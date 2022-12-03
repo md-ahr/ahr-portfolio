@@ -3,7 +3,11 @@
 
   &-nav {
     .nav-item {
-      margin-left: 90px;
+      margin-left: 60px;
+
+      @include respondScreen(laptop) {
+        margin-left: 90px;
+      }
 
       &:first-child {
         margin-left: 0;
