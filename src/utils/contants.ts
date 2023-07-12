@@ -1,4 +1,4 @@
-export const MENU = [
+export const MENU: Menu[] = [
   {
     name: 'home',
     path: '/',
