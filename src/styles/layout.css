@@ -1,3 +1,49 @@
 .main-layout {
-  @apply mx-auto w-[90%] bg-hero-pattern bg-cover bg-no-repeat;
+  @apply mx-auto h-[100vh] w-[90%] bg-hero-pattern bg-cover bg-no-repeat;
+}
+
+.lines {
+  position: relative;
+
+  .horizontal-line {
+    @apply absolute left-[152px] top-[-206px] h-[350px] opacity-[0.4] sm:left-[228px] sm:top-[-394px] sm:h-[auto];
+  }
+
+  .vertical-line {
+    @apply absolute left-[-6%] top-[-46px] opacity-[0.4] sm:top-[-72px];
+  }
+}
+
+.intro {
+  position: relative;
+}
+
+.intro .circle {
+  width: 264px;
+  height: 264px;
+  flex-shrink: 0;
+  border-radius: 264px;
+  background: linear-gradient(110deg, #c4c4c4 0%, rgba(196, 196, 196, 0) 100%);
+  position: absolute;
+  top: -50%;
+  right: -0.5%;
+  z-index: 9;
+}
+
+.intro .content {
+  width: 95%;
+  margin-top: 60px;
+  padding-block: 40px;
+  margin-inline: auto;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    136deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+  backdrop-filter: blur(6px);
+  position: relative;
+  z-index: 10;
 }
