@@ -7,12 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        lora: 'var(--font-lora)',
+        ubuntu: 'var(--font-ubuntu)',
+        seaweedScript: 'var(--font-seaweedScript)',
       },
+      colors: {
+        primary: '#2A0044',
+        secondary: '#504D4D',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/images/bg.png')",
+      }
+    },
+    fontSize: {
+      sm: '1.375rem',
+      base: '1.5rem',
+      lg: '1.75rem',
+      xl: '1.875rem',
+      '2xl': '2rem',
+      '3xl': '2.5rem',
+      '4xl': '3rem',
+      '5xl': '3.125rem',
+      '6xl': '3.75rem',
+      '7xl': '4rem',
+      '8xl': '6rem',
     },
   },
   plugins: [],
-}
+};
