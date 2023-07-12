@@ -1,0 +1,19 @@
+#main-navbar {
+  @apply mt-[24px] sm:mt-[36px];
+
+  .navbar-wrapper {
+    @apply flex justify-center gap-[60px] sm:justify-end sm:gap-[104px];
+  }
+
+  .nav-link {
+    @apply font-ubuntu text-sm capitalize text-black transition duration-500 sm:text-base;
+
+    &.active {
+      @apply border-b-2 border-black;
+    }
+
+    &:hover {
+      @apply border-b-2 border-black;
+    }
+  }
+}

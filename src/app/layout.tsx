@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Lora, Seaweed_Script, Ubuntu } from 'next/font/google';
 
-import './globals.css';
+import Navbar from '@/components/Navbar';
+
+import '@/styles/globals.css';
 
 const lora = Lora({
   weight: ['400', '500', '600', '700'],
@@ -38,8 +40,9 @@ export default function RootLayout({
     <html lang="en" className="antialiased">
       <body
         suppressHydrationWarning={true}
-        className={`bg-hero-pattern bg-cover bg-no-repeat ${lora.variable} ${ubuntu.variable} ${seaweedScript.variable}`}
+        className={`main-layout ${lora.variable} ${ubuntu.variable} ${seaweedScript.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

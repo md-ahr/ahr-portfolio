@@ -1,0 +1,3 @@
+.main-layout {
+  @apply mx-auto w-[90%] bg-hero-pattern bg-cover bg-no-repeat;
+}
